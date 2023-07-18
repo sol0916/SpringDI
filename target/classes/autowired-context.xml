@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- spring-context안의 추가적인 기능 -->
+	<!-- 자동주입 명령을 실행할 수 있는 설정 -->
+	<context:annotation-config />
+	
+	<bean id="document1" class="ex05.Document" />
+	<bean id="document2" class="ex05.Document" />
+	
+	<bean class="ex05.Printer" />
+
+</beans>
